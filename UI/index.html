@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        h2{
+            font-family:'Ubuntu' ;
+            font-size: 42px;
+            line-height: 1.3em;
+            border: 3px solid rgb(2, 1, 0);
+            width: 1000px;
+            height: 50px;
+            background-color: rgb(193, 236, 123);
+            margin:23px auto;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+
+            
+    </style>
+   
+</head>
+<body>
+    <div class="card-container my-5 border-left-0">
+        <div class="icon-circle">
+            <img class="px-2 py-2" src="https://cdn2.iconfinder.com/data/icons/flat-productivity-at-work/256/To-Do_List-512.png"
+                alt="icon" height="100px">
+        </div>
+        <h2 class="bloc text-white"><strong>TASK CARD</strong></h1>
+            <p id="taskCount" class="task-count text-white">0 Task</p>
+ 
+ 
+ 
+ 
+            <div class="task-card">
+                
+                <button id="fab" class="fab float-right" data-toggle="modal" data-target="#add-task-container">
+                    <img clas="m-auto" src="https://cdn2.iconfinder.com/data/icons/flat-productivity-at-work/256/To-Do_List-512.png"
+                        alt="" height="16" width="16">
+                </button>
+                
+ 
+                
+                <ul id="list" class="list-group mt-3">
+                </ul>
+               
+ 
+               
+                <div id="add-task-container" class="modal add-task-container" data-backdrop="static">
+                    <div class="container">
+                        <div class="col mx-2">
+                            <h5 class="text-primary text-center mt-4">New Task</h5>
+                            <input id="new-task" class="mt-3" type="text">
+                            <button type="button" data-dismiss="modal" class="btn btn-primary btn-block mt-3"
+                                onclick="addTask(document.getElementById('new-task').value);">Add
+                                Task</button>
+                        </div>
+                    </div>
+                </div>
+                
+ 
+            </div>
+    </div>
+ 
+   
+</body>
+</html>
