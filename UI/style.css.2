@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .card-container {
+            width: 300px;
+            height: 250px;
+            background: #2699FB;
+            border: 1px solid #2699FB;
+            border-radius: 10px;
+            opacity: 1;
+            margin-right: auto;
+            margin-left: auto;
+            border-left: 0;
+        }
+ 
+        .icon-circle {
+            background: white;
+            border-radius: 200px;
+            height: 70px;
+            font-weight: bold;
+            width: 70px;
+            display: table;
+            margin-top: 12px;
+            margin-left: 31px;
+        }
+ 
+        .bloc {
+            margin-top: 12px;
+            margin-left: 28px;
+        }
+ 
+        .task-count {
+            margin-top: 7px;
+            margin-left: 31px;
+        }
+ 
+        
+ 
+        .fab {
+            background: #2699FB;
+            border-radius: 200px;
+            height: 40px;
+            width: 40px;
+            font-weight: bold;
+            border: 0;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            margin-right: 27px;
+            margin-bottom: 31px;
+        }
+ 
+        .add-task-container {
+            top: 150px;
+            width: 300px;
+            height: 187px;
+            background: #FFFFFF;
+            border-radius: 25px 25px 0px 0px;
+            opacity: 1;
+            position: absolute;
+            background-color:lightyellow;
+            
+        }
+        .btn{
+        margin-top: 13px;
+         margin-right: 60px;
+         cursor: pointer;
+         padding: 2px;
+         border-radius: 4px;
+         
+
+        }
+        .btn:hover{
+            color: #FFFFFF;
+            background-color: rgb(58, 115, 221);
+            border: 2px solid black;
+            
+        }
+        
+        .task-done {
+            color: gray;
+            text-decoration: line-through;
+        }
+        h3{
+            font-family:;
+        }
+        .task-card {
+            width: 300px;
+            height: 325px;
+            border: 1px solid #FFFFFF;
+            
+            border-radius: 25px 25px 10px 10px;
+            opacity: 1;
+            position: relative;
+            background-color:lightyellow;
+        }
+            
+            
+        .container{
+            margin-bottom: 100px;
+        }
+        .colmx-2 textarea{
+            width: 90%;
+            height: 49px;
+            padding: 15px;
+            outline: none;
+            resize: none;
+            border-radius:5px;
+            border-color: #bfbfbf;
+            max-height: 330px;
+
+        }
+        textarea:is(:focus,:valid){
+            border-width:2px;
+            border-color: #4671EA;
+            padding: 14px;
+        }
+        textarea::-webkit-scrollbar{
+            width: 0px;
+        }
+        
+        
+
+        @media only screen and (min-width:1000px){
+            .card-container {
+            width: 1400px;
+            height: 500px;
+            background: #2699FB;
+            border: 1px solid #2699FB;
+            border-radius: 10px;
+            opacity: 1;
+            margin-right: auto;
+            margin-left: auto;
+            border-left: 0;
+        }
+ 
+        .icon-circle {
+            background: white;
+            border-radius: 200px;
+            height: 70px;
+            font-weight: bold;
+            width: 70px;
+            display: table;
+            margin-top: 12px;
+            margin-left: 31px;
+        }
+ 
+        .bloc {
+            margin-top: 12px;
+            margin-left: 28px;
+        }
+ 
+        .task-count {
+            margin-top: 7px;
+            margin-left: 31px;
+        }
+ 
+        
+ 
+        .fab {
+            background: #2699FB;
+            border-radius: 200px;
+            height: 40px;
+            width: 40px;
+            font-weight: bold;
+            border: 0;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            margin-right: 27px;
+            margin-bottom: 31px;
+        }
+ 
+        .add-task-container {
+            top: 150px;
+            width: 1000px;
+            height: 187px;
+            background: #FFFFFF;
+            border-radius: 25px 25px 0px 0px;
+            opacity: 1;
+            position: absolute;
+            background-color:lightyellow;
+            
+            
+        }
+        .btn{
+         margin-right: 60px;
+         cursor: pointer;
+         padding: 2px;
+         border-radius: 4px;
+         float: right ;
+         
+         
+         
+
+        }
+        .btn:hover{
+            color: #FFFFFF;
+            background-color: rgb(58, 115, 221);
+            border: 2px solid black;
+            
+        }
+        
+        .task-done {
+            color: gray;
+            text-decoration: line-through;
+        }
+        h3{
+            font-family:;
+        }
+        .task-card {
+            width: 1400px;
+            height: 325px;
+            border: 1px solid #FFFFFF;
+            
+            border-radius: 25px 25px 10px 10px;
+            opacity: 1;
+            position: relative;
+            background-color:lightyellow;
+            
+        }
+        .container{
+            margin-bottom: 100px;
+        }
+        .colmx-2 textarea{
+            width: 90%;
+            height: 49px;
+            padding: 15px;
+            outline: none;
+            resize: none;
+            border-radius:5px;
+            border-color: #bfbfbf;
+            max-height: 330px;
+
+        }
+        textarea:is(:focus,:valid){
+            border-width:2px;
+            border-color: #4671EA;
+            padding: 14px;
+        }
+        textarea::-webkit-scrollbar{
+            width: 0px;
+        }
+
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="card-container my-5 border-left-0">
+        <div class="icon-circle">
+            <img class="px-2 py-2" src="https://cdn2.iconfinder.com/data/icons/flat-productivity-at-work/256/To-Do_List-512.png"
+                alt="icon" height="100px">
+        </div>
+        <h1 class="bloc text-white"><strong>TASK CARD</strong></h1>
+            <p id="taskCount" class="task-count text-white">0 Task</p>
+ 
+ 
+ 
+ 
+            <div class="task-card">
+                
+                
+                
+ 
+                
+                <ul id="list" class="list-group mt-3">
+                </ul>
+               
+ 
+               
+                <div id="add-task-container" class="modal add-task-container" data-backdrop="static">
+                    <div class="container">
+                        <div class="colmx-2">
+                            <h3 class="text-primary text-center mt-4">New Task</h3>
+                            <textarea placeholder="Enter your task here..."required></textarea>
+                            <button type="button" data-dismiss="modal" class="btn"
+                                onclick="addTask(document.getElementById('new-task').value);">Add
+                                Task</button>
+                        </div>
+                        <script>
+                            const textarea=document.querySelector("textarea");
+                            textarea.addEventListener("keyup",e=>{
+                                textarea.style.height="auto";
+                                let scHeight=e.target.scrollHeight;
+                                textarea.style.Height=`${scHeight}px`;
+                            });
+                        </script>
+                    </div>
+                </div>
+                
+ 
+            </div>
+    </div>
+ 
+   
+</body>
+</html>
