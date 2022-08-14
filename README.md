@@ -12,5 +12,6 @@ truffle compile
 
 run the frontend after followoing commands-
 git init
+
 git web dev
 
